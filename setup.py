@@ -17,6 +17,7 @@ extras_require = {
     "lint": [
         "black>=20.8b1,<21.0",  # auto-formatter and linter
         "mypy>=0.800,<1.0",  # Static type analyzer
+        "isort>=5.7.0,<6.0",  # Import sorting linter
     ],
     "doc": [
         "Sphinx>=3.4.3,<4",  # Documentation generator
