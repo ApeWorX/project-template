@@ -9,7 +9,7 @@ extras_require = {
     "test": [  # `test` GitHub Action jobs uses this
         "pytest>=6.0,<7.0",  # Core testing package
         "pytest-xdist",  # multi-process runner
-        "pytest-coverage",  # Coverage analyzer plugin
+        "pytest-cov",  # Coverage analyzer plugin
     ],
     "fuzz": [  # `fuzz` GitHub Action job uses this
         "hypothesis>=6.2.0,<7.0",  # Strategy-based fuzzer
@@ -25,6 +25,7 @@ extras_require = {
     ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
+        "setuptools-scm",  # Installation tool
         "wheel",  # Packaging tool
         "twine",  # Package upload tool
     ],
@@ -55,8 +56,8 @@ with open("./README.md") as readme:
 
 setup(
     name="<PYPI_NAME>",
-    # *IMPORTANT*: Don't manually change the version here. Use `cz bump`
-    version="0.1.0-alpha.0",  # Initial version
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -65,7 +66,7 @@ setup(
     url="https://github.com/ApeWorX/<REPO_NAME>",
     include_package_data=True,
     install_requires=[],  # NOTE: Add 3rd party libraries here
-    python_requires=">=3.6, <4",
+    python_requires=">=3.6,<4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
     license="Apache-2.0",
