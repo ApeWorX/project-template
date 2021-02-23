@@ -58,7 +58,7 @@ with open("./README.md") as readme:
 setup(
     name="<PYPI_NAME>",
     use_scm_version=True,
-    setup_requires=['setuptools_scm'],
+    setup_requires=["setuptools_scm"],
     description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
     long_description=long_description,
     long_description_content_type="text/markdown",
