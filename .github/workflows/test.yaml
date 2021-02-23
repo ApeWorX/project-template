@@ -24,7 +24,7 @@ jobs:
           run: flake8 ./<MODULE_NAME> ./tests ./setup.py
 
         - name: Run isort
-          run: isort --recursive --check-only --diff ./<MODULE_NAME> ./tests
+          run: isort --check-only --diff ./<MODULE_NAME> ./tests
     
     type-check:
         runs-on: ubuntu-latest
