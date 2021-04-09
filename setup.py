@@ -61,7 +61,9 @@ setup(
     author_email="admin@apeworx.io",
     url="https://github.com/ApeWorX/<REPO_NAME>",
     include_package_data=True,
-    install_requires=[],  # NOTE: Add 3rd party libraries here
+    install_requires=[
+        "importlib-metadata ; python_version<'3.8'",
+    ],  # NOTE: Add 3rd party libraries here
     python_requires=">=3.6,<4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
