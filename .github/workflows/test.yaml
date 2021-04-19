@@ -25,7 +25,7 @@ jobs:
 
         - name: Run isort
           run: isort --check-only --diff ./<MODULE_NAME> ./tests
-    
+
     type-check:
         runs-on: ubuntu-latest
 
@@ -64,22 +64,23 @@ jobs:
         - name: Run Tests
           run: pytest -m "not fuzzing"
 
-    fuzzing:
-        runs-on: ubuntu-latest
-
-        strategy:
-            fail-fast: true
-
-        steps:
-        - uses: actions/checkout@v2
-
-        - name: Setup Python
-          uses: actions/setup-python@v2
-          with:
-              python-version: 3.8
-
-        - name: Install Dependencies
-          run: pip install .[test]
-
-        - name: Run Tests
-          run: pytest -m "fuzzing" --no-cov -s
+# NOTE: uncomment this block after you've marked tests with @pytest.mark.fuzzing
+#    fuzzing:
+#        runs-on: ubuntu-latest
+#
+#        strategy:
+#            fail-fast: true
+#
+#        steps:
+#        - uses: actions/checkout@v2
+#
+#        - name: Setup Python
+#          uses: actions/setup-python@v2
+#          with:
+#              python-version: 3.8
+#
+#        - name: Install Dependencies
+#          run: pip install .[test]
+#
+#        - name: Run Tests
+#          run: pytest -m "fuzzing" --no-cov -s
