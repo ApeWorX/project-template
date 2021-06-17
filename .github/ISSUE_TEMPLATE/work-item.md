@@ -1,9 +1,7 @@
 ---
 name: Work item
 about: New work item for Ape team
-title: ''
-labels: ''
-assignees: ''
+labels: 'backlog'
 
 ---
 

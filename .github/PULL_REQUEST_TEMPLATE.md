@@ -11,4 +11,4 @@ Related issue: #
 - [ ] Passes all linting checks (pre-commit and CI jobs)
 - [ ] New test cases have been added and are passing
 - [ ] Documentation has been updated
-- [ ] Commit messages and PR title follow [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) standard (will be automatically included in the changelog)
+- [ ] PR title follows [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) standard (will be automatically included in the changelog)
