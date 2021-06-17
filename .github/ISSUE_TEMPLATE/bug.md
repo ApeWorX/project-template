@@ -1,6 +1,7 @@
 ---
 name: Bug report
 about: Report an error that you've encountered.
+labels: 'bug'
 ---
 ### Environment information
 

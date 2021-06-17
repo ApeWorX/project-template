@@ -1,6 +1,7 @@
 ---
 name: Feature request
 about: Request a new feature, or an improvement to existing functionality.
+labels: 'enhancement'
 ---
 
 ### Overview
