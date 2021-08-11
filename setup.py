@@ -15,11 +15,6 @@ extras_require = {
         "flake8>=3.8.3,<4.0",  # Style linter
         "isort>=5.7.0,<6.0",  # Import sorting linter
     ],
-    "doc": [
-        "Sphinx>=3.4.3,<4",  # Documentation generator
-        "sphinx_rtd_theme>=0.1.9,<1",  # Readthedocs.org theme
-        "towncrier>=19.2.0, <20",  # Generate release notes
-    ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
         "setuptools-scm",  # Installation tool
@@ -39,7 +34,6 @@ extras_require = {
 extras_require["dev"] = (
     extras_require["test"]
     + extras_require["lint"]
-    + extras_require["doc"]
     + extras_require["release"]
     + extras_require["dev"]
 )
