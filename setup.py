@@ -17,7 +17,6 @@ extras_require = {
     ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
-        "setuptools-scm",  # Installation tool
         "wheel",  # Packaging tool
         "twine",  # Package upload tool
     ],
