@@ -16,26 +16,11 @@ write_to = "<MODULE_NAME>/version.py"
 line-length = 100
 target-version = ['py37', 'py38', 'py39']
 include = '\.pyi?$'
-exclude = '''
-/(
-    \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | build
-  | dist
-  | env
-  | venv
-)/
-'''
 
 [tool.pytest.ini_options]
 addopts = """
     -n auto
-    -p no:ape_test"
+    -p no:ape_test
     --cov-branch
     --cov-report term
     --cov-report html
