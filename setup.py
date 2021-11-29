@@ -13,7 +13,7 @@ extras_require = {
         "black>=21.10b0,<22.0",  # auto-formatter and linter
         "mypy>=0.910,<1.0",  # Static type analyzer
         "flake8>=3.8.3,<4.0",  # Style linter
-        "isort>=5.7.0,<6.0",  # Import sorting linter
+        "isort>=5.9.3,<6.0",  # Import sorting linter
     ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
@@ -55,7 +55,7 @@ setup(
     install_requires=[
         "importlib-metadata ; python_version<'3.8'",
     ],  # NOTE: Add 3rd party libraries here
-    python_requires=">=3.6,<4",
+    python_requires=">=3.7,<4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
     license="Apache-2.0",
