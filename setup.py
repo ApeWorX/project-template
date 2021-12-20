@@ -64,7 +64,7 @@ setup(
     packages=find_packages(exclude=["tests", "tests.*"]),
     package_data={"<MODULE_NAME>": ["py.typed"]},
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 3 - Beta",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Natural Language :: English",
