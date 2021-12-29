@@ -39,3 +39,6 @@ known_third_party = ["hypothesis"]
 known_first_party = ["MODULE_NAME"]
 multi_line_output = 3
 use_parentheses = true
+
+[tool.mypy]
+exclude = "build"
