@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from setuptools import find_packages, setup  # type: ignore
+from setuptools import find_packages, setup
 
 extras_require = {
     "test": [  # `test` GitHub Action jobs uses this
@@ -12,6 +12,7 @@ extras_require = {
     "lint": [
         "black>=22.10.0",  # auto-formatter and linter
         "mypy>=0.982",  # Static type analyzer
+        "types-setuptools",  # Needed for mypy type shed
         "flake8>=5.0.4",  # Style linter
         "isort>=5.10.1",  # Import sorting linter
     ],
