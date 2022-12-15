@@ -33,4 +33,4 @@ repos:
         additional_dependencies: [mdformat-gfm, mdformat-frontmatter]
 
 default_language_version:
-    python: python3.8
+    python: python3
