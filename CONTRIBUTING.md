@@ -4,14 +4,14 @@ To get started with working on the codebase, use the following steps prepare you
 
 ```bash
 # clone the github repo and navigate into the folder
-git clone https://github.com/ApeWorX/<REPO_NAME>.git
-cd <PROJECT_NAME>
+git clone https://github.com/ApeWorX/ape-quicknode.git
+cd ape-quicknode
 
 # create and load a virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# install <PROJECT_NAME> into the virtual environment
+# install ape-quicknode into the virtual environment
 python setup.py install
 
 # install the developer dependencies (-e is interactive mode)
